@@ -1,0 +1,6 @@
+framework module Pods_UIKitSentryDemo {
+  umbrella header "Pods-UIKitSentryDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

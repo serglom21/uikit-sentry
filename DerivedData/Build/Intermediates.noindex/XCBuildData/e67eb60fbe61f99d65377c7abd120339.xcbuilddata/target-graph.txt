@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'UIKitSentryDemo' in project 'UIKitSentryDemo'
+➜ Implicit dependency on target 'Pods-UIKitSentryDemo' in project 'Pods' via file 'Pods_UIKitSentryDemo.framework' in build phase 'Link Binary'
+Target 'Pods-UIKitSentryDemo' in project 'Pods' (no dependencies)

@@ -1,0 +1,48 @@
+{
+  "" : {
+    "diagnostics" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/UIKitSentryDemo-master.dia",
+    "emit-module-dependencies" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/UIKitSentryDemo-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/UIKitSentryDemo-master-emit-module.dia",
+    "swift-dependencies" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/UIKitSentryDemo-master.swiftdeps"
+  },
+  "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/sergiolombana/Documents/uikit-ios-demo/UIKitSentryDemo/AppDelegate.swift" : {
+    "const-values" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/AppDelegate.dia",
+    "index-unit-output-path" : "/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/AppDelegate~partial.swiftmodule"
+  },
+  "/Users/sergiolombana/Documents/uikit-ios-demo/UIKitSentryDemo/SceneDelegate.swift" : {
+    "const-values" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/SceneDelegate.swiftconstvalues",
+    "dependencies" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/SceneDelegate.d",
+    "diagnostics" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/SceneDelegate.dia",
+    "index-unit-output-path" : "/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/SceneDelegate.o",
+    "llvm-bc" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/SceneDelegate.bc",
+    "object" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/SceneDelegate.o",
+    "swift-dependencies" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/SceneDelegate.swiftdeps",
+    "swiftmodule" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/SceneDelegate~partial.swiftmodule"
+  },
+  "/Users/sergiolombana/Documents/uikit-ios-demo/UIKitSentryDemo/ViewController.swift" : {
+    "const-values" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/ViewController.swiftconstvalues",
+    "dependencies" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/ViewController.d",
+    "diagnostics" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/ViewController.dia",
+    "index-unit-output-path" : "/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/ViewController.o",
+    "llvm-bc" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/ViewController.bc",
+    "object" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/ViewController.o",
+    "swift-dependencies" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/ViewController.swiftdeps",
+    "swiftmodule" : "/Users/sergiolombana/Documents/uikit-ios-demo/DerivedData/Build/Intermediates.noindex/UIKitSentryDemo.build/Debug-iphonesimulator/UIKitSentryDemo.build/Objects-normal/arm64/ViewController~partial.swiftmodule"
+  }
+}
