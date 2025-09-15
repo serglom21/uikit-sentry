@@ -150,8 +150,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/getsentry/sentry-cocoa";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.53.2;
+				kind = exactVersion;
+				version = 8.53.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

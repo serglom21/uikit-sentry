@@ -8,8 +8,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        print("🔍 AppDelegate: Starting Sentry initialization...")
-        print("🔍 AppDelegate: window property is \(window == nil ? "nil" : "set")")
+        NSLog("🔍🔍🔍 AppDelegate: Creating window FIRST... 🔍🔍🔍")
+        NSLog("🔍 AppDelegate: window property is \(window == nil ? "nil" : "set")")
+
+        // Create window BEFORE Sentry initialization (like customer's setup)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let viewController = ViewController()
+        let navigationController = UINavigationController(rootViewController: viewController)
+        
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+        
+        NSLog("🔍 AppDelegate: Window setup completed")
+        NSLog("🔍 AppDelegate: window property is now \(window == nil ? "nil" : "set")")
+        
+        NSLog("🔍🔍🔍 AppDelegate: Starting Sentry initialization... 🔍🔍🔍")
         
         SentrySDK.start { options in
             options.dsn = "https://bd03859ac43e47f1a74c83a5a2b8614b@o88872.ingest.us.sentry.io/6748045"
@@ -23,21 +37,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
                 return crumb
             }
+            
+            options.beforeSend = { event in
+                // Use NSLog instead of print for better visibility
+                NSLog("🔍🔍🔍 SENTRY EVENT CAPTURED 🔍🔍🔍")
+                NSLog("🔍 Event Type: \(event.type ?? "unknown")")
+                NSLog("🔍 Event Level: \(event.level)")
+                NSLog("🔍 Event Message: \(event.message?.formatted ?? "No message")")
+                
+                // Check SDK version
+                if let sdk = event.sdk {
+                    NSLog("🔍 SDK Info: \(sdk)")
+                    let sdkVersion = sdk["version"] as? String ?? "unknown"
+                    NSLog("🔍 SDK Version: \(sdkVersion)")
+                    
+                    if sdkVersion == "8.53.2" {
+                        NSLog("✅✅✅ SDK VERSION CONFIRMED: 8.53.2 ✅✅✅")
+                    } else {
+                        NSLog("❌❌❌ SDK VERSION MISMATCH: Expected 8.53.2, got \(sdkVersion) ❌❌❌")
+                    }
+                } else {
+                    NSLog("❌❌❌ NO SDK INFO FOUND IN EVENT ❌❌❌")
+                }
+                
+                // Output full event JSON for debugging
+                do {
+                    let jsonData = try JSONSerialization.data(withJSONObject: event.serialize(), options: .prettyPrinted)
+                    if let jsonString = String(data: jsonData, encoding: .utf8) {
+                        NSLog("🔍 FULL EVENT JSON:")
+                        NSLog(jsonString)
+                    }
+                } catch {
+                    NSLog("❌ Failed to serialize event JSON: \(error)")
+                }
+                
+                NSLog("🔍🔍🔍 END SENTRY EVENT 🔍🔍🔍")
+                
+                // Return the event to send it
+                return event
+            }
         }
         
-        print("🔍 AppDelegate: Sentry initialization completed")
-        print("🔍 AppDelegate: Creating window...")
-
-        window = UIWindow(frame: UIScreen.main.bounds)
-
-        let viewController = ViewController()
-        let navigationController = UINavigationController(rootViewController: viewController)
-
-        window?.rootViewController = navigationController
-        window?.makeKeyAndVisible()
+        NSLog("🔍 AppDelegate: Sentry initialization completed")
         
-        print("🔍 AppDelegate: Window setup completed")
-        print("🔍 AppDelegate: window property is now \(window == nil ? "nil" : "set")")
+        // Trigger a test error to see if beforeSend hook is called
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            NSLog("🔍 Triggering test error to test beforeSend hook...")
+            SentrySDK.capture(message: "Test error to validate beforeSend hook and SDK version")
+        }
 
         return true
     }
