@@ -8,10 +8,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
+        print("🔍 AppDelegate: Starting Sentry initialization...")
+        print("🔍 AppDelegate: window property is \(window == nil ? "nil" : "set")")
+        
         SentrySDK.start { options in
             options.dsn = "https://bd03859ac43e47f1a74c83a5a2b8614b@o88872.ingest.us.sentry.io/6748045"
             options.debug = true
             options.tracesSampleRate = 1.0
+            options.environment = "sergio-test"
             
             options.beforeBreadcrumb = { crumb in
                 if crumb.category == "http" {
@@ -20,6 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 return crumb
             }
         }
+        
+        print("🔍 AppDelegate: Sentry initialization completed")
+        print("🔍 AppDelegate: Creating window...")
 
         window = UIWindow(frame: UIScreen.main.bounds)
 
@@ -28,18 +35,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
+        
+        print("🔍 AppDelegate: Window setup completed")
+        print("🔍 AppDelegate: window property is now \(window == nil ? "nil" : "set")")
 
         return true
     }
 
-    @available(iOS 13.0, *)
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    @available(iOS 13.0, *)
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-    }
     
     private func enhanceHttpBreadcrumb(_ crumb: Breadcrumb) -> Breadcrumb {
         // Create a mutable copy of the breadcrumb
